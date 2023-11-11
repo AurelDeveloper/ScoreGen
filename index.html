@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ScoreToCode</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Organization",
+      "name": "Meine Webseite",
+      "url": "/img/logo.png",
+      "logo": "https://www.example.com/logo.png"
+    }
+  </script>
+</head>
+
+<body>
+  <div class="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="/Pages/about.html">About</a></li>
+      <li><a href="/Pages/donate.html">Formula</a></li>
+      <li><a href="/Pages/contact.html">Contact</a></li>
+    </ul>
+  </div>
+
+  <div class="box">
+    <input type="text" class="input-field" id="maxScoreInput" placeholder="Max Score" value="">
+    <div class="line"></div>
+    <input type="text" class="input-field" id="nameInput" placeholder="Name (facultatif)">
+    <input type="text" class="input-field" id="scoreInput" placeholder="Score">
+    <button class="button" onclick="addScore();">Add</button>
+  </div>
+
+  <div class="table">
+    <table id="scoreTable">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Score</th>
+          <th>Max Score</th>
+          <th>Note</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+    <button id="buttonCalculate" class="button" onclick="calculateNotes();">Calculate</button>
+  </div>
+
+
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>

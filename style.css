@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "SF Compact", sans-serif;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    align-items: center;
+}
+
+
+/*Navbar*/ 
+
+.navbar ul {
+    list-style-type: none;
+    background: black;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    display: inline-block;
+
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    width: 100px;
+    display: block;
+    padding: 15px;
+    font-size: 17px;
+    font-family: "SF Compact", sans-serif;
+
+}
+
+.navbar a:hover {
+    background: black;
+    color: #adadad;
+}
+
+p {
+    position: absolute;
+    left: 45%;
+    top: 90%;
+}
+
+
+/* Calculate Box */
+
+.box {
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 20px;
+    width: 300px;
+    display: inline-block;
+    margin: 80px;
+}
+
+.input-field {
+    display: block;
+    margin-bottom: 8px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 92%;
+    outline: auto;
+}
+
+#maxScoreInput {
+    margin : 0px 0px 40px 0px;
+}
+
+.button {
+    padding: 10px 40px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.button:hover {
+    background-color: #606060;
+}
+
+.line {
+    border: 1px solid #000000;
+    width: 100%;
+    margin: -20px 0px 20px 0px;
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    color: #000000;
+    font-family: "SF Compact", sans-serif;
+    font-size: 25px;
+    text-align: center;
+    background-color: #ffffff;
+    position: absolute;
+    top: 50%;
+}

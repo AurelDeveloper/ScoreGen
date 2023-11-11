@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScoreToCode - Contact</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: black;
+            z-index: 1;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+        }
+
+        .navbar li {
+            display: inline-block;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #fff;
+            width: 100px;
+            display: block;
+            padding: 15px;
+            font-size: 17px;
+            font-family: "SF Text", sans-serif;
+        }
+
+        .navbar a:hover {
+            background: black;
+            color: #adadad;
+        }
+
+        :root {
+            --transparent: rgba(0, 0, 0, 0);
+            --semi-transparent: rgba(0, 0, 0, 0.8);
+            --secondary-colour: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "SF Compact", sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            width: 100vw;
+            background-color: #000000;
+            color: rgb(255, 255, 255);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        #contact-container {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+
+        #contact-title {
+            text-align: center;
+            font-size: 3em;
+            color: var(--secondary-colour);
+            width: 60vw;
+        }
+
+        #contact-form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        #name-container {
+            display: flex;
+            flex-wrap: nowrap;
+        }
+
+        #mail-input {
+            width: 93%;
+        }
+
+        #subject-input {
+            width: 93%;
+        }
+
+        form input,
+        form textarea {
+            padding: 1em;
+            margin: 1em;
+            border: 0px;
+            border-radius: 0.5em;
+            border: 0.2em solid var(--transparent);
+        }
+
+        form input:focus,
+        form textarea:focus {
+            outline: none;
+            background: #ffffff;
+            border-color: var(--secondary-colour);
+        }
+
+        #subject-input {
+            resize: vertical;
+            min-height: 3em;
+        }
+
+        #submit-button {
+            cursor: pointer;
+            width: fit-content;
+            padding: 1em;
+            padding-left: 2em;
+            padding-right: 2em;
+            background-color: var(--secondary-colour);
+            border-radius: 5em;
+            color: rgb(0, 0, 0);
+            font-size: 1em;
+            border: 0.1em solid var(--secondary-colour);
+        }
+
+        #traditional-contact {
+            margin: 1em;
+            padding: 1em;
+            border-left: 0.2em solid var(--secondary-colour);
+            text-align: left;
+        }
+
+        #traditional-contact h2 {
+            font-size: 1.5em;
+            font-weight: 400;
+        }
+
+        hr {
+            margin: 1em;
+            width: 100%;
+        }
+
+        #contact-link {
+            text-decoration: none;
+            color: var(--secondary-colour);
+        }
+
+        .fa {
+            text-decoration: none;
+            font-size: 1.2em;
+            margin-right: 0.5em;
+            color: var(--secondary-colour);
+            padding: 0.5em;
+            width: 2em;
+            text-align: center;
+        }
+
+        @media (hover: hover) {
+            #submit-button:hover {
+                background-color: var(--transparent);
+                color: var(--secondary-colour);
+            }
+
+            .fa:hover {
+                background-color: var(--secondary-colour);
+                color: #1d1e22;
+            }
+
+            #contact-link:hover {
+                border-bottom: 0.1em dashed var(--secondary-colour);
+                border-top: 0.1em dashed var(--secondary-colour);
+            }
+        }
+
+        @media (hover: none) {
+            #submit-button {
+                background-color: var(--transparent);
+                color: var(--secondary-colour);
+            }
+
+            #contact-link {
+                border-bottom: 0.1em dashed var(--secondary-colour);
+            }
+        }
+
+        @media only screen and (max-width: 768px) {
+            #traditional-contact {
+                border-top: 0.2em solid var(--secondary-colour);
+                border-left: 0.2em solid var(--transparent);
+            }
+        }
+
+
+
+
+
+
+        /* ---- START FOOTER ---- */
+        footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            padding: 1em;
+            font-size: 1.5em;
+            color: #D6D5D5;
+        }
+
+        #anmabe {
+            background: linear-gradient(-45deg,
+                    #ee7752,
+                    #e73c7e,
+                    #23a6d5,
+                    #23d5ab);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        #anmabe:hover {
+            text-decoration: underline;
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="/Pages/about.html">About</a></li>
+            <li><a href="/Pages/donate.html">Donate</a></li>
+            <li><a href="/Pages/contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <h1 id="contact-title">Contact</h1>
+    <div id="contact-container">
+        <form id="contact-form" action="mailto:hinoran.marlon" method="post" enctype="text/plain">
+            <textarea id="subject-input" name="subject" placeholder="Type your message here"></textarea>
+            <input id="submit-button" type="submit" value="Submit">
+        </form>
+    </div>
+
+        <div id="traditional-contact">
+            <h2>Contact me through:</h2>
+            <a href="mailto:mail@example.com" id="contact-link">hinoran.marlon@gmail.com</a>
+            <hr>
+            <h2>Find me on</h2>
+            <a href="https://www.youtube.com/" class="fa fa-youtube"><img src="/img/youtube.png" alt="" width="25"
+                    height="25"></a>
+            <a href="https://www.instagram.com/aurel.visual/" class="fa fa-instagram"><img src="/img/instagramm.png"
+                    alt="" width="25" height="25"></a>
+        </div>
+    </div>
+
+</body>
+
+</html>

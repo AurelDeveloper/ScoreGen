@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ScoreToCode - About</title>
+  <style>
+    /* CSS-Regeln im head-Bereich */
+    @import url("https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@300;400&display=swap");
+
+    :root {
+      --color-white: #fafafa;
+      --color-off-white: #dfdfdf;
+      --color-gray: darken(var(--color-white), 50%);
+      --color-black: #000;
+      --font-copy: "Montserrat", sans-serif;
+      --font-title: "Anton", sans-serif;
+
+      --screen-lg: 920px;
+      --screen-md: 760px;
+      --screen-sm: 580px;
+      --screen-xsm: 370px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="/Pages/about.html">About</a></li>
+      <li><a href="/Pages/donate.html">Donate</a></li>
+      <li><a href="/Pages/contact.html">Contact</a></li>
+    </ul>
+  </div>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: black;
+    }
+
+    .navbar ul {
+      list-style-type: none;
+      text-align: center;
+      padding: 0;
+      margin: 0;
+    }
+
+    .navbar li {
+      display: inline-block;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: #fff;
+      width: 100px;
+      display: block;
+      padding: 15px;
+      font-size: 17px;
+      font-family: "Helvetica", sans-serif;
+    }
+
+    .navbar a:hover {
+      background: black;
+      color: #adadad;
+    }
+  </style>
+
+  <div class="container">
+    <header>
+      <nav class="nav">
+        <ul class="nav__list"></ul>
+        <span class="nav__copy">All rights reserved 2021</span>
+      </nav>
+      <h1 class="page-title">About Us</h1>
+    </header>
+    <main>
+      <article class="content">
+        <section class="content__descriptor">
+          <h2 class="content__title">Info</h2>
+        </section>
+        <section class="content__text-box">
+          <p class="content__text">
+            We aim to be the investors we wished we had when we started out.
+            Lightning-fast, always on your side and fundamentally helpful.
+          </p>
+          <p class="content__text">
+            Our knowledge is your knowledge. Our network is your network. Your
+            problems are our problems. We don't have all the answers, but we
+            will help you find them.
+          </p>
+        </section>
+      </article>
+    </main>
+  </div>
+
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@300;400&display=swap");
+
+    /* Farbvariablen */
+    :root {
+      --color-white: #fafafa;
+      --color-off-white: #dfdfdf;
+      --color-gray: #808080;
+      /* Dunkler gemacht, da SCSS darken() nicht in CSS funktioniert */
+      --color-black: #000;
+    }
+
+    /* Bildschirmgrößenvariablen */
+    :root {
+      --screen-lg: 920px;
+      --screen-md: 760px;
+      --screen-sm: 580px;
+      --screen-xsm: 370px;
+    }
+
+    /* Box-Sizing zurücksetzen */
+    *,
+    *::after,
+    *::before {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Textauswahl */
+    *::selection {
+      color: var(--color-black);
+      background-color: var(--color-off-white);
+    }
+
+    /* Basis-Fonts und Grundeinstellungen */
+    html {
+      font-size: 62.5%;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: "Montserrat", sans-serif;
+      font-size: 1.5rem;
+      line-height: 1.5;
+      font-weight: 300;
+      color: var(--color-off-white);
+      background-color: var(--color-black);
+    }
+
+    /* Container-Stil */
+    .container {
+      max-width: 120rem;
+      margin: 0 auto;
+      padding: 0 6rem 6rem 6rem;
+      position: relative;
+      top: 100px;
+    }
+
+    /* Navbar-Stil */
+    .nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8rem 0 6rem 0;
+    }
+
+    .nav__list {
+      display: flex;
+      gap: 16rem;
+      list-style: none;
+    }
+
+    .nav__list--active {
+      color: var(--color-white);
+      transition: color 0.2s ease;
+    }
+
+    .nav__list--active:hover {
+      color: #808080;
+    }
+
+    .nav__list--active--active {
+      color: #404040;
+      /* Noch dunkler gemacht */
+      transition: color 0.2s ease;
+    }
+
+    .nav__copy {
+      display: none;
+    }
+
+    /* Seitentitel-Stil */
+    .page-title {
+      margin-bottom: 8rem;
+      font-family: "Anton", sans-serif;
+      font-size: 16rem;
+      font-weight: 100;
+      text-transform: uppercase;
+      letter-spacing: -0.4px;
+      line-height: 16rem;
+      color: var(--color-white);
+    }
+
+    /* Inhaltsbereich-Stil */
+    .content {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .content__descriptor {
+      width: 14%;
+      border-top: 1px solid var(--color-gray);
+      padding-top: 4rem;
+    }
+
+    .content__title {
+      font-size: 1.5rem;
+      font-weight: 400;
+    }
+
+    .content__text-box {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-end;
+      gap: 2rem;
+      width: 50%;
+      border-top: 1px solid var(--color-gray);
+      border-bottom: 1px solid var(--color-gray);
+      margin-right: 10rem;
+      padding: 4rem 0;
+    }
+
+    .content__text-box--active {
+      margin-right: 0;
+    }
+
+    .content__text {
+      width: 320px;
+    }
+
+    /* Media-Query-Mixins (falls benötigt) */
+    @media only screen and (max-width: var(--screen-sm)) {
+      .nav {
+        padding-bottom: 2rem;
+      }
+
+      .nav__copy {
+        display: none;
+      }
+
+      .page-title {
+        margin-bottom: 4rem;
+        font-size: 7rem;
+      }
+
+      .content {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+      }
+
+      .content__text-box {
+        border-bottom: none;
+      }
+    }
+
+    @media only screen and (max-width: var(--screen-lg)) {
+      .nav__list {
+        gap: 6rem;
+      }
+    }
+
+    @media only screen and (max-width: var(--screen-sm)) {
+      .nav__list {
+        gap: 4rem;
+      }
+    }
+  </style>
+
+</body>
+
+</html>
