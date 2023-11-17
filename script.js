@@ -1,5 +1,8 @@
 // Definiere ein leeres Array, um die eingegebenen Namen, Punktzahlen und maximalen Punktzahlen zu speichern
 let scoreTable = [];
+var localStorage = window.localStorage;
+var localStorage = macos.localStorage;
+localStorage.setItem(scoreTable);
 
 // Hole die Tabelle aus dem HTML-Dokument
 let table = document.getElementById("scoreTable");
