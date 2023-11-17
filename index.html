@@ -1,52 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ScoreToCode</title>
+  <title>Smart Notes Calculator</title>
   <link rel="stylesheet" href="style.css">
-  </script>
+  <script src="https://unpkg.com/mathjs@11.11.2/"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.0.1/dist/chart.umd.min.js"></script>
 </head>
-
 <body>
   <div class="navbar">
     <ul>
       <li><a href="index.html">Home</a></li>
-      <li><a href="/Pages/about.html">About</a></li>
-      <li><a href="/Pages/donate.html">Formula</a></li>
-      <li><a href="/Pages/contact.html">Contact</a></li>
+      <li><a href="Pages/about.html">About</a></li>
+      <li><a href="Pages/formula.html">Formula</a></li>
+      <li><a href="Pages/contact.html">Contact</a></li>
     </ul>
   </div>
 
   <div class="box">
-    <input type="number" class="input-field" id="maxScoreInput" placeholder="Max Score" value="">
+    <input type="number" class="input-field" id="maxScoreInput" placeholder="Max Score">
+    <input type="number" class="input-field" id="AverageInput" placeholder="Desired Average">
+    <input type="number" class="input-field" id="maxNoteImput" placeholder="Max Note">
     <div class="line"></div>
-    <input type="text" class="input-field" id="nameInput" placeholder="Name (facultatif)">
+    <input type="text" class="input-field" id="nameInput" placeholder="Name (optional)">
     <input type="number" class="input-field" id="scoreInput" placeholder="Score">
-    <button class="button" onclick="addScore();">Add</button>
-    <button id="buttonCalculate" class="button" onclick="calculateNotes();">Calculate</button>
+    <button class="button" onclick="addScore()">Add</button>
+    <button class="button" onclick="calculateResult()">Calculate</button>
   </div>
 
   <div class="table">
-    <table id="scoreTable">
+    <table id="scoresTable">
+      <caption>Added Scores</caption>
       <thead>
         <tr>
           <th>Name</th>
           <th>Score</th>
-          <th>Max Score</th>
           <th>Note</th>
         </tr>
       </thead>
-      <tbody>
-      </tbody>
+      <tbody></tbody>
     </table>
   </div>
 
+  <td class="delete-cell" id="custom-delete-cell"></td>
+  
+
+
+  <canvas id="line-chart"></canvas>
+  <div  id="notesTable"></div>
 
 
   <script src="script.js"></script>
-
 </body>
-
 </html>

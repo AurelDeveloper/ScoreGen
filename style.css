@@ -9,7 +9,6 @@ body {
 
 
 /*Navbar*/ 
-
 .navbar ul {
     list-style-type: none;
     background: black;
@@ -28,7 +27,7 @@ body {
     color: #fff;
     width: 100px;
     display: block;
-    padding: 15px;
+    padding: 20px;
     font-size: 17px;
     font-family: "SF Compact", sans-serif;
 
@@ -47,9 +46,8 @@ p {
 
 
 /* Calculate Box */
-
 .box {
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
     border-radius: 20px;
     padding: 20px;
     width: 300px;
@@ -66,20 +64,28 @@ p {
     outline: auto;
 }
 
-#maxScoreInput {
+#AverageScore {
     margin : 0px 0px 40px 0px;
 }
 
+#calculateButton {
+    margin-top: -10px;
+}
+
 .button {
-    display: block;
     padding: 10px 40px;
-    background-color: #ffffff;
-    color: rgb(0, 0, 0);
+    background-color: #000000;
+    color: rgb(255, 255, 255);
     border: none;
     border-radius: 50px;
     cursor: pointer;
-    margin: auto;
+    margin: 0 auto; /* Zentriert horizontal */
+    margin-bottom: 20px;
+    display: block;
+    text-align: center; /* Zentriert den Text innerhalb des Buttons */
 }
+
+
 
 .button:hover {
     background-color: #606060;
@@ -88,18 +94,64 @@ p {
 .line {
     border: 1px solid #000000;
     width: 100%;
-    margin: -20px 0px 20px 0px;
+    margin: 20px 0px 20px 0px;
 }
 
-
-table {
+/* Added Scores Table */
+.table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+  }
+  
+  #scoresTable {
     border-collapse: collapse;
-    width: 100%;
-    color: #000000;
-    font-family: "SF Compact", sans-serif;
-    font-size: 25px;
+    width: 80%;
+    max-width: 600px;
+    margin-top: 20px; /* Hier kannst du die gewünschte Distanz nach oben einstellen */
+  }
+  
+  #scoresTable caption {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  #scoresTable th, #scoresTable td {
+    border: 1px solid #b3b3b3;
+    padding: 8px;
     text-align: center;
+  }
+  
+  #scoresTable th {
+    background-color: #f2f2f2;
+  }
+  
+  #scoresTable tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+/* Delete Cell in the Table */
+td.delete-cell {
+    display: none;
+  }
+  
+  /* Stil für die "delete-cell" Zellen, wenn der Mauszeiger über der Tabelle ist */
+  table:hover td.delete-cell {
+    display: table-cell; /* Sichtbar machen */
     background-color: #ffffff;
-    position: absolute;
-    top: 80%;
-}
+    border: 2px solid #ffffff;
+  }
+  
+  /* Stil für die "Delete"-Schaltflächen */
+  button.delete-button {
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
