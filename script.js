@@ -4,6 +4,8 @@ var localStorage = window.localStorage;
 var localStorage = macos.localStorage;
 localStorage.setItem(scoreTable);
 
+let scoreTableLocalStorage = localStorage.getItem(scoreTable);
+
 // Hole die Tabelle aus dem HTML-Dokument
 let table = document.getElementById("scoreTable");
 
