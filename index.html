@@ -1,22 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Smart Grade Calculator</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
   <script src="https://unpkg.com/mathjs@11.11.2/"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.0.1/dist/chart.umd.min.js"></script>
 </head>
+
+<style>
+  body {
+    padding: 20px;
+  }
+
+  .container {
+    max-width: 500px;
+    /* Vergrößert die maximale Breite des Containers */
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .box,
+  .table,
+  article {
+    width: 100%;
+    max-width: 40%;
+    margin: 0 auto;
+    /* Zentriert die Elemente horizontal */
+    padding: 20px;
+    /* Gibt den Elementen mehr Innenabstand */
+    box-sizing: border-box;
+    /* Berücksichtigt Padding in der Gesamtbreite */
+  }
+
+  @media only screen and (max-width: 600px) {
+    .container {
+      max-width: 100%;
+    }
+  }
+
+  .box,
+  .table,
+  article {
+    margin-top: 20px;
+  }
+
+  .table {
+    margin-top: 20px;
+  }
+
+  .button {
+    background-color: #ff0037;;
+  }
+</style>
+
 <body>
-  <div class="navbar">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="Pages/about.html">About</a></li>
-      <li><a href="Pages/formula.html">Formula</a></li>
-      <li><a href="Pages/contact.html">Contact</a></li>
-    </ul>
-  </div>
+
+  <article>This calculator is only for Switzerland then the score a only on 6!🇨🇭</article>
 
   <div class="box">
     <input type="number" class="input-field" id="maxScoreInput" placeholder="Max Score">
@@ -31,7 +73,6 @@
 
   <div class="table">
     <table id="scoresTable">
-      <caption>Added Scores</caption>
       <thead>
         <tr>
           <th>Name</th>
@@ -44,13 +85,11 @@
   </div>
 
   <td class="delete-cell" id="custom-delete-cell"></td>
-  
-
 
   <canvas id="line-chart"></canvas>
-  <div  id="notesTable"></div>
-
+  <div id="notesTable"></div>
 
   <script src="script.js"></script>
 </body>
+
 </html>
