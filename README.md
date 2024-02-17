@@ -3,6 +3,8 @@
 ## 📊 Description:
 This project is a Grade Generator that allows users to decide the average grade for a set of scores. It includes a web interface with tables and charts to visualize the generated grades.
 
+![Screenshot 2024-02-17 at 15 27 30](https://github.com/AurelDeveloper/ScoreGen/assets/150530607/597171f5-132c-4786-a76f-595a832deb2c)
+
 ## 🔧 Algorithm for Grade Generation:
 
 #### Data Input:
