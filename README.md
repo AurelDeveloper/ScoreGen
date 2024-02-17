@@ -1,11 +1,11 @@
 ****Grade Generator****
 
-📊 Description:
+**📊 Description:**
 This project is a Grade Generator that allows users to decide the average grade for a set of scores. It includes a web interface with tables and charts to visualize the generated grades.
 
 🔧 Algorithm for Grade Generation:
 
-Data Input:
+**Data Input:**
 
 Scores for each student are collected and stored in the scores array.
 Names of students are stored in the names array.
